@@ -13,7 +13,7 @@ function App() {
            setCounter( counter+1)
           }
           else{
-            alert('Values should not exceed then 20')
+            alert('Values should not exceed 20')
           }
         }
 
@@ -22,7 +22,7 @@ function App() {
           setCounter(counter-1)
         } 
           else{
-            alert('Values should not below then 0')
+            alert('Values should not go below 0')
           }
         }
           
