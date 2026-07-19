@@ -20,6 +20,7 @@ function App() {
            <Card name="Alishba" someObj={myObj} btnText="Visit me" newArr={myArr} instock=
            {true}/>
     <Card name="Ayesha" newArr={myarr} instock={false}/>
+
     </>
   )
 }
