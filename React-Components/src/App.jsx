@@ -4,11 +4,11 @@ import { Hello } from './Hello'
 import { HelloWithoutJSX } from './Hello'
 import { Card } from './Card'
 import { CardWithoutJSX } from './Card'
+import {CandidateProfile} from './CandidateProfile'
 
 function App() {
   return (
     <>
-    <h1>Learning Recat JS</h1>
    <HelloWithoutJSX/>
    <Hello/>
     <Welcome/>
@@ -17,6 +17,8 @@ function App() {
     <Card/>
     <br />
     <CardWithoutJSX/>
+    <br />
+    <CandidateProfile/>
     </> 
   )
 }
