@@ -23,7 +23,7 @@ function Card({name,btnText="Click me" ,newArr, instock}) {
        {name}
       </h1>
       <div>
-        {newArr[0]}
+        {newArr.join(",")}
       </div>
       <div className="text-lg font-semibold text-slate-500">
         $110.00
