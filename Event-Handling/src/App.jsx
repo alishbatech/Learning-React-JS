@@ -3,6 +3,7 @@ import './App.css'
 import Contact from './Components/Contact'
 import NewsLetter from './Components/NewsLetter'
 import Menu from './Components/Menu'
+import TaskList from './Task-List-Project/TaskList'
 
 function App() {
  
@@ -16,6 +17,8 @@ function App() {
       <NewsLetter/>
       <br />
       <Menu/>
+      <br />
+      <TaskList/>
     </>
   )
 }
