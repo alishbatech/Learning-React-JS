@@ -4,7 +4,7 @@ export const ProductList = () => {
         { id: 2, name: 'Laptop', price: 600 },
         { id: 3, name: 'HeadPhone', price: 250 },
         { id: 4, name: 'TV', price: 400 },
-        { id: 5, name: 'iPad', price: 500 }
+        { id: 5, name: 'iPad', price: 450 }
     ];
     const ProductElements = products
         .filter((product) => (product.price > 200))
