@@ -4,6 +4,8 @@ import Contact from './Components/Contact'
 import NewsLetter from './Components/NewsLetter'
 import Menu from './Components/Menu'
 import TaskList from './Task-List-Project/TaskList'
+import StudentList from './Student-Attendance-List/StudentList'
+
 
 function App() {
  
@@ -19,6 +21,8 @@ function App() {
       <Menu/>
       <br />
       <TaskList/>
+      <br />
+      <StudentList/>
     </>
   )
 }
