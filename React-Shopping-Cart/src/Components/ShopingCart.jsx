@@ -38,7 +38,7 @@ function ShopingCart() {
     return (
         <div className='min-h-screen bg-gray-100 p-8'>
             <h2 className='mb-8 text-center text-3xl font-bold text-gray-800 p-3'>  🛒React Course Store</h2>
-            <div className='mx-auto grid max-x-5xl gap-6 md:grid-cols-3'>
+            <div className='mx-auto grid max-w-5xl gap-6 md:grid-cols-3'>
                 <ProductCart
                 name='JavaScript Course'
                 price={prices.javascriptCourse}
