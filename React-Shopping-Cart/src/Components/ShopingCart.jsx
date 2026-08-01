@@ -15,51 +15,57 @@ function ShopingCart() {
     }
 
     const onReactAddtoCart = () => {
-        setCartItems((prev) => (
-            {
-                ...prev,
-                reactCourse: prev.reactCourse + 1,
-            }))
+        if (cartItems.reactCourse < 5) {
+            setCartItems((prev) => (
+                {
+                    ...prev,
+                    reactCourse: prev.reactCourse + 1,
+                }))
+        }
     }
     const onJSAddtoCart = () => {
-        setCartItems((prev) => (
-            {
-                ...prev,
-                javascriptCourse: prev.javascriptCourse + 1,
-            }))
+        if (cartItems.javascriptCourse < 5) {
+            setCartItems((prev) => (
+                {
+                    ...prev,
+                    javascriptCourse: prev.javascriptCourse + 1,
+                }))
+        }
     }
     const onVueAddtoCart = () => {
-        setCartItems((prev) => (
-            {
-                ...prev,
-                vueCourse: prev.vueCourse + 1,
-            }))
+        if (cartItems.vueCourse < 5) {
+            setCartItems((prev) => (
+                {
+                    ...prev,
+                    vueCourse: prev.vueCourse + 1,
+                }))
+        }
     }
     return (
         <div className='min-h-screen bg-gray-100 p-8'>
             <h2 className='mb-8 text-center text-3xl font-bold text-gray-800 p-3'>  🛒React Course Store</h2>
             <div className='mx-auto grid max-w-5xl gap-6 md:grid-cols-3'>
                 <ProductCart
-                name='JavaScript Course'
-                price={prices.javascriptCourse}
-                quantity={cartItems.javascriptCourse}
-                onAddtoCart={onJSAddtoCart}
-            />
-            <ProductCart
-                name='React Course'
-                price={prices.reactCourse}
-                quantity={cartItems.reactCourse}
-                onAddtoCart={onReactAddtoCart}
-            />
-            <ProductCart
-                name='Vue Course'
-                price={prices.vueCourse}
-                quantity={cartItems.vueCourse}
-                onAddtoCart={onVueAddtoCart}
-            />
+                    name='JavaScript Course'
+                    price={prices.javascriptCourse}
+                    quantity={cartItems.javascriptCourse}
+                    onAddtoCart={onJSAddtoCart}
+                />
+                <ProductCart
+                    name='React Course'
+                    price={prices.reactCourse}
+                    quantity={cartItems.reactCourse}
+                    onAddtoCart={onReactAddtoCart}
+                />
+                <ProductCart
+                    name='Vue Course'
+                    price={prices.vueCourse}
+                    quantity={cartItems.vueCourse}
+                    onAddtoCart={onVueAddtoCart}
+                />
             </div>
             <br />
-           
+
             <CartSummary prices={prices} cartItems={cartItems} />
         </div>
     )
