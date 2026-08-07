@@ -1,5 +1,6 @@
 import Header from './Header'
 import './App.css'
+import { UserContext } from './UserContext'
 
 function App() {
  const user={
@@ -10,12 +11,14 @@ function App() {
 
   return (
  
-    <div style={{height:'100vh', backgroundColor:'black',color:'lightgrey',
-       textAlign:'center',  padding:'10px'}}>
+   <UserContext value={user}>
+     <div style={{height:'100vh' , backgroundColor:'black',color:'lightgrey',
+       textAlign:'center',  padding:'20px'}}>
      <h1>Dashboard</h1>
       <Header user={user}/>
 
     </div>
+   </UserContext>
   
   )
 }

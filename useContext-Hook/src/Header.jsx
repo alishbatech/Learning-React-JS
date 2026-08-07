@@ -1,11 +1,11 @@
 import React from 'react'
 import NavigationBar from './NavigationBar'
 
-function Header({user}) {
+function Header() {
   return (
     <div>
         <h2>Header</h2>
-        <NavigationBar user={user}/>
+        <NavigationBar />
     </div>
   )
 }
