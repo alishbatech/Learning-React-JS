@@ -4,8 +4,8 @@ import UserMenu from './UserMenu'
 function NavigationBar() {
   return (
     <div>
-        <h2>NavigationBar</h2>
-        <UserMenu />
+      <h2>NavigationBar</h2>
+      <UserMenu />
 
     </div>
   )
