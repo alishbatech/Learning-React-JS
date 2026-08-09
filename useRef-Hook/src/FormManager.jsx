@@ -41,25 +41,30 @@ function FormManager() {
             }}>
                 <h2>Form Manager</h2>
 
-                <div style={{ display: 'flex', gap: '20px', margin: '30px' }}>
-                    <label htmlFor="">Name:</label>
+                <div style={{ display: 'flex', flexDirection:'column', gap: '20px', margin: '30px' }}>
+                    <div style={{display:'flex',gap:'20px',color:'black'}}>
+                        <label htmlFor="">Name:</label>
                     <input ref={focusName}
                         style={{
                             paddingInline: '20px', paddingBlock: '8px', border: 'none',
                             borderRadius: '20px', boxShadow: '0px 2px 15px black'
                         }}
                         type="text" placeholder='Enter your name' />
+                    </div>
 
 
-                    <label htmlFor="">Email:</label>
+                   <div style={{display:'flex',gap:'20px',color:'black'}}>
+                     <label htmlFor="">Email:</label>
                     <input ref={focusEmail}
                         style={{
                             paddingInline: '20px', paddingBlock: '8px', border: 'none',
                             borderRadius: '20px', boxShadow: '0px 2px 15px black'
                         }}
                         type="email" placeholder='Enter email' />
+                   </div>
 
-                    <label htmlFor="">Password:</label>
+                  <div style={{display:'flex',gap:'20px',color:'black'}}>
+                      <label htmlFor="">Password:</label>
                     <input ref={focusPassword}
                         style={{
                             paddingInline: '20px', paddingBlock: '8px', border: 'none',
@@ -67,6 +72,7 @@ function FormManager() {
                         }}
                         type="password" placeholder='Enter password' />
 
+                  </div>
                 </div>
 
                 <div style={{ display: 'flex', gap: '15px' }}>
