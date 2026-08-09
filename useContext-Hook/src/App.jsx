@@ -3,6 +3,8 @@ import './App.css'
 import UserContextProvider from './Components/UserContextProvider'
 import ContextProvider from './LanguageSwitcher/ContextProvider'
 import LangHeader from './LanguageSwitcher/LangHeader'
+import UserProvider from './UserAuthenticationUI/UserProvider'
+import NavBar from './UserAuthenticationUI/NavBar'
 
 function App() {
 
@@ -11,10 +13,10 @@ function App() {
 
     <UserContextProvider>
       <div style={{
-        height: '100vh', 
+        marginBottom:'10px',
         backgroundColor:'black', 
         color: 'lightgrey',
-        textAlign: 'center', padding: '20px'
+        textAlign: 'center', padding: '50px'
       }}>
         <h1>Dashboard</h1>
         <Header />
@@ -24,15 +26,27 @@ function App() {
 
     <ContextProvider>
        <div style={{
-        height: '100vh', 
+       marginBottom:'10px',
         backgroundColor:'black', 
         color: 'lightgrey',
-        textAlign: 'center', padding: '10px'
+        textAlign: 'center', padding: '50px'
       }}>
         <LangHeader/>
 
       </div>
     </ContextProvider>
+
+    <UserProvider>
+       <div style={{
+      
+        backgroundColor:'black', 
+        color: 'lightgrey',
+        textAlign: 'center', padding: '50px'
+      }}>
+       <NavBar/>
+
+      </div>
+    </UserProvider>
 </>
   )
 }
