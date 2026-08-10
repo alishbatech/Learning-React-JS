@@ -7,13 +7,14 @@ function CounterWithReducer() {
     switch (action) {
       case "increment":
         return state + 1;
-
       case "decrement":
         return state - 1;
-
+      case "plusFive":
+        return state + 5;
+      case "minusFive":
+        return state - 5;
       case "reset":
         return initialCount;
-
       default:
         return state;
     }
@@ -31,6 +32,14 @@ function CounterWithReducer() {
 
       <button onClick={() => dispatch("decrement")}>
         Decrement
+      </button>
+
+      <button onClick={() => dispatch("plusFive")}>
+        ➕ 5
+      </button>
+
+      <button onClick={() => dispatch("minusFive")}>
+        ➖ 5
       </button>
 
       <button onClick={() => dispatch("reset")}>
