@@ -1,9 +1,11 @@
 import './App.css'
 import CounterWithinit from './CounterWithinit'
 import CounterWithReducer from './CounterWithReducer'
+import RatingSelector from './RatingSelector'
 import { ShoppingCart } from './ShoppingCart'
 import ShoppingCartWithUseReducer from './ShoppingCartWithUseReducer'
 import TodoManager from './TodoManager'
+import TraficLight from './TraficLight'
 
 function App() {
  
@@ -15,6 +17,8 @@ function App() {
      {/* <ShoppingCart/> */}
      {/* <CounterWithinit/> */}
      <TodoManager/>
+     <TraficLight/>
+     <RatingSelector/>
 
     </>
   )
