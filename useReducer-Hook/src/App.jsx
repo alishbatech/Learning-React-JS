@@ -8,19 +8,19 @@ import TodoManager from './TodoManager'
 import TraficLight from './TraficLight'
 
 function App() {
- 
-  return (
-    <>
-    {/* <ShoppingCartWithUseReducer/> */}
-     <CounterWithReducer/>
-     <br />
-     {/* <ShoppingCart/> */}
-     {/* <CounterWithinit/> */}
-     <TodoManager/>
-     <TraficLight/>
-     <RatingSelector/>
 
-    </>
+  return (
+    <div  className="w-full min-h-screen text-xl bg-gray-700" >
+      {/* <ShoppingCartWithUseReducer/> */}
+      <CounterWithReducer />
+      <br />
+      {/* <ShoppingCart/> */}
+      {/* <CounterWithinit/> */}
+      {/* <TodoManager/> */}
+      <TraficLight />
+      <RatingSelector />
+    </div>
+
   )
 }
 
