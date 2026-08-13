@@ -3,6 +3,7 @@ import UserProfile from './UserProfile'
 import TimerComponent from './TimerComponent'
 import HookCounter from './HookCounter'
 import MouseContainer from './MouseContainer'
+import IntervalHookCounter from './IntervalHookCounter'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
  {/* <UserProfile/> */}
  {/* <TimerComponent/> */}
  <MouseContainer/>
+ <IntervalHookCounter/>
     </>
   )
 }
