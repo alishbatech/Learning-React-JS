@@ -4,8 +4,8 @@ import { useState,useEffect } from 'react'
 
 function DataFetching() {
     const [post,setPost]=useState({})
-    const [id ,setId]=useState(1)
-    const [buttonId ,setButtonId]=useState(1)
+    const [id ,setId]=useState("")
+    const [buttonId ,setButtonId]=useState("")
     const [isLoading,setisLoading]=useState(false)
     const [isError,setisError]=useState(false)
   
@@ -15,6 +15,8 @@ function DataFetching() {
     }
     
     useEffect(()=>{
+      if(!buttonId && !id) return;
+      
         setisLoading(true)
         setisError(false)
         axios.get(`https://jsonplaceholder.typicode.com/posts/${buttonId}`)
@@ -25,8 +27,7 @@ function DataFetching() {
       .catch((err)=>{
         setisError(true)
         
-    }
-    )
+    })
       .finally(()=>{
         setisLoading(false)
       })
@@ -34,12 +35,21 @@ function DataFetching() {
 
   return (
     <div>
-        <input type="text" value={id} onChange={e=>setId(e.target.value)} />
+        <input
+        placeholder='Search by id'
+         type="text" 
+         value={id} 
+         onChange={e=>setId(e.target.value)} />
         <button type='button' onClick={handleButtonID}>Fetch Data</button>
        <h2>
         { isLoading && <p>Loading...</p>}
         {isError&& <p>Something went wrong</p>}
-        {!isLoading&& !isError && <p>{post.title}</p>}
+        {!isLoading&& !isError && 
+                <div>
+                   <h2>Title {post.id} : {post.title}</h2>
+                 <p>Body {post.id} : {post.body}</p>
+                </div>
+                 }
        </h2>
           {/* <ul>
             {
