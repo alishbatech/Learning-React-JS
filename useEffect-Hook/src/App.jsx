@@ -18,7 +18,7 @@ function App() {
  {/* <UserProfile/> */}
  {/* <TimerComponent/> */}
  <MouseContainer/>
- <IntervalHookCounter/>
+ <IntervalHookCounter someProps="Alishba"/>
     </>
   )
 }
