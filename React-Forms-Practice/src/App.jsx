@@ -1,10 +1,11 @@
 import './App.css'
+import CreateForm from './CreateForm'
 
 function App() {
 
   return (
     <>
-     <h2>React Forms Practice</h2>
+     <CreateForm/>
     </>
   )
 }
