@@ -26,6 +26,9 @@ function CreateForm() {
             setError('Please Select an Author.')
             return
         }
+        setTitle('')
+        setBody('')
+        setAuthor('')
         setError('')
         setIsError(false)
         setIsSuccess(true)
