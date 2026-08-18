@@ -1,11 +1,11 @@
 import './App.css'
 import { BrowserRouter, Routes, Route, Link, useParams } from 'react-router-dom'
-import Home from './Home'
-import About from './About'
-import Contact from './Contact'
-import Laptop from './Laptop'
-import Phone from './Phone'
-import Products from './Products'
+import Home from './Components/Home'
+import About from './Components/About'
+import Contact from './Components/Contact'
+import Laptop from './Components/Laptop'
+import Phone from './Components/Phone'
+import Products from './Components/Products'
 
 function App() {
 
