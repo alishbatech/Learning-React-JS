@@ -1,4 +1,6 @@
 import './App.css'
+import ToggleText from './ToggleText'
+import UserData from './UserData'
 
 function App() {
  
@@ -6,6 +8,8 @@ function App() {
   return (
    <>
    <h2>Custum Hooks</h2>
+   <ToggleText/>
+   <UserData/>
    </>
   )
 }
