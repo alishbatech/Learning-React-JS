@@ -6,11 +6,12 @@ function App() {
  
 
   return (
-   <>
-   <h2>Custum Hooks</h2>
+   <div style={{width:'90vw',height:'100vh'
+    ,backgroundColor:'gray', padding:'50px'}}>
+   <h1>Custom Hooks</h1>
    <ToggleText/>
-   <UserData/>
-   </>
+   {/* <UserData/> */}
+   </div>
   )
 }
 
