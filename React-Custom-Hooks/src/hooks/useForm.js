@@ -1,30 +1,29 @@
 import { useState } from "react";
 
-export default function useForm(initialValues = {}, callback){
+export default function useForm(initialValues = {}, onSubmit) {
     const [values, setValues] = useState(initialValues)
 
-    // Handle input change
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setValues( prev => ({
+    const handleChange=(e)=>{
+         const {name,value}=e.target;
+         setValues(prev=>({
             ...prev,
-            [name] : value
-        }))
+            [name]:value
+         }))
+    }
+    const handleSubmit=(e)=>{
+        e.preventDefault()
+        if(onSubmit) onSubmit(values)
     }
 
-    // Handle Form Submit
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if(callback) callback(values);
+    const handleReset=()=>{
+        setValues(initialValues)
     }
 
-    // Reset Form
-    const resetForm = () => setValues(initialValues)
 
     return {
         values,
         handleChange,
         handleSubmit,
-        resetForm
+        handleReset
     }
 }
