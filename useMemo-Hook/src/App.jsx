@@ -1,4 +1,4 @@
-import './App.css'
+import WithUseMemo from './Components/WithUseMemo'
 import WithoutUseMemo from './WithoutUseMemo'
 
 function App() {
@@ -6,7 +6,8 @@ function App() {
   return (
     <>
     <h2>useMemo Hook</h2>
-    <WithoutUseMemo/>
+    {/* <WithoutUseMemo/> */}
+   <WithUseMemo/>
     </>
   )
 }
