@@ -5,7 +5,6 @@ function Parent() {
   const [count, setCount] = useState(0)
   const user = useMemo(() => ({ name: 'Alishba', age: 19 }), [])
   console.log("Parent")
-
   return (
     <div>
       <h2>Count: {count}</h2>
